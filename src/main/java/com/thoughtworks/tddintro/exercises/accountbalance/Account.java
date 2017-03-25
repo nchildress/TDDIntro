@@ -7,13 +7,13 @@ public class Account {
         this.balance = balance;
     }
 
-    public Integer deposit(int i) {
-        balance += i;
+    public Integer deposit(int amount) {
+        balance += amount;
         return balance;
     }
 
-    public Integer withdraw(int i) {
-        balance -= i;
+    public Integer withdraw(int amount) {
+        balance -= amount;
         return balance;
     }
 }
