@@ -13,7 +13,7 @@ public class Account {
     }
 
     public Integer withdraw(int amount) {
-        balance -= amount;
+        if(balance >= amount) balance -= amount;
         return balance;
     }
 }
