@@ -8,6 +8,7 @@ public class Account {
     }
 
     public Integer deposit(int i) {
+        balance += i;
         return balance;
     }
 }
