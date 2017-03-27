@@ -65,11 +65,11 @@ public class LibraryTest {
     }
 
     @Test
-    @Ignore // Remove each @Ignore and implement test
     public void shouldDeleteBookFromCollectionWhenRemovedByUser() throws IOException {
         // Add when/thenReturn here
 
         books.add("The Two Towers");
+        when(bufferedReader.readLine()).thenReturn("The Two Towers");
         library.removeBook();
 
         assertThat(books, not(hasItems("The Two Towers")));
